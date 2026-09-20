@@ -20,6 +20,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://usamanazir.vercel.app"),
   title: "Usama Nazir | Materials Physics & Scientific Computing",
   description:
     "Physics researcher specializing in magnetic nanomaterials, rare-earth substituted ferrites, sol-gel synthesis, and computational data modeling.",

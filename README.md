@@ -1,36 +1,28 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Usama Nazir | Materials Physics & Scientific Computing Portfolio
 
-## Getting Started
+**Live Deployment:** [usamanazir.vercel.app](https://usamanazir.vercel.app)
 
-First, run the development server:
+An interactive, academic research portfolio built for graduate admissions (CSC Type B, ANSO, and University Fellowships) in Materials Science & Engineering and Condensed Matter Physics.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Interactive 3D Physics Background:** Full-viewport interactive crystal lattices (M-type hexagonal prisms, coordination polyhedra, Bragg planes, toroids, and magnetic spin dipoles) built with Three.js with mouse repulsion and spring return dynamics.
+- **Interactive Physics Lab Suite:**
+  1. *Scherrer Crystallite Size & Microstrain Calculator (XRD)*
+  2. *VSM Magnetic Hysteresis (M-H) Loop Simulator*
+  3. *Sol-Gel Auto-Combustion Fuel Stoichiometry Calculator*
+- **Mathematical Formulations:** KaTeX-rendered governing equations across all laboratory tools.
+- **Color System:** Dark obsidian default theme with light beige secondary mode and persistent theme switching.
+- **Design Principles:** Minimalist, editorial typography (Inter & Playfair Display), custom heightened sliders, clean borders, zero generic AI badges.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## Tech Stack
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Framework:** Next.js 16 (App Router, React 19, Turbopack)
+- **Styling:** Tailwind CSS v4
+- **3D Graphics:** Three.js
+- **Mathematical Rendering:** KaTeX
+- **Deployment:** Vercel
