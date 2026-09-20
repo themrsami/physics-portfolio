@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "katex/dist/katex.min.css";
+
+:root {
+  --background: #f7f4ed;
+  --foreground: #1c1917;
+  --foreground-muted: #57534e;
+  --surface: #ffffff;
+  --surface-muted: #f1ede4;
+  --border: #e3dcd1;
+  --border-strong: #c8beb0;
+  --primary: #1e3a5f;
+  --primary-accent: #8b4513;
+  --track: #e5dfd3;
+  --track-fill: #1e3a5f;
+  --pattern-dot: #d6cec2;
+}
+
+.dark {
+  --background: #141311;
+  --foreground: #f4f0e6;
+  --foreground-muted: #a8a29e;
+  --surface: #1c1a17;
+  --surface-muted: #24211d;
+  --border: #2e2b26;
+  --border-strong: #454038;
+  --primary: #3b82f6;
+  --primary-accent: #d97706;
+  --track: #2a2722;
+  --track-fill: #3b82f6;
+  --pattern-dot: #2b2823;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-border: var(--border);
+  --color-border-strong: var(--border-strong);
+  --color-primary: var(--primary);
+  --color-primary-accent: var(--primary-accent);
+  --font-sans: var(--font-inter), sans-serif;
+  --font-serif: var(--font-playfair), serif;
+}
+
+/* Background grid / micro-dot pattern */
+.bg-archival-pattern {
+  background-color: var(--background);
+  background-image: radial-gradient(var(--pattern-dot) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Smooth color transitions for theme changes */
+body {
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+::selection {
+  background-color: var(--primary);
+  color: #ffffff;
+}
+
+/* Custom Heightened Bold Slider Styles */
+.custom-slider-input {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.custom-slider-input::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 26px;
+  background: var(--foreground);
+  border: 2px solid var(--surface);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  cursor: grab;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.custom-slider-input:active::-webkit-slider-thumb {
+  cursor: grabbing;
+  background: var(--primary);
+}
+
+.custom-slider-input::-moz-range-thumb {
+  width: 20px;
+  height: 26px;
+  background: var(--foreground);
+  border: 2px solid var(--surface);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  cursor: grab;
+}
