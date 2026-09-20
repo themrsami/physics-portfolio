@@ -23,6 +23,14 @@ export const metadata: Metadata = {
   title: "Usama Nazir | Materials Physics & Scientific Computing",
   description:
     "Physics researcher specializing in magnetic nanomaterials, rare-earth substituted ferrites, sol-gel synthesis, and computational data modeling.",
+  icons: {
+    icon: [
+      { url: "/icon.svg", type: "image/svg+xml" },
+      { url: "/favicon.ico", sizes: "any" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/icon.svg",
+  },
 };
 
 export default function RootLayout({
