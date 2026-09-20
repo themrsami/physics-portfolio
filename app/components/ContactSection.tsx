@@ -56,7 +56,7 @@ export default function ContactSection() {
           </a>
 
           <a
-            href="https://www.linkedin.com/in/fullstackusama/"
+            href="https://www.linkedin.com/in/usamanazir13/"
             target="_blank"
             rel="noopener noreferrer"
             className="p-4 bg-surface border border-border hover:border-primary transition-colors block"
@@ -65,7 +65,7 @@ export default function ContactSection() {
               LinkedIn
             </span>
             <span className="text-xs font-bold text-foreground">
-              linkedin.com/in/usama &rarr;
+              linkedin.com/in/usamanazir13 &rarr;
             </span>
           </a>
         </div>
